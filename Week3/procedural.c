@@ -2,10 +2,20 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-int main()
+int difference(int n)
 {
-    int n = -10;
+    int x = 51;
     n = abs(n);
-    printf("Absolute Value = %d \n", n);
-    return 0;
+
+    if (n > x)
+    {
+        return (n - x) * 3;
+    }
+    return x - n;
+}
+
+int main(void)
+{
+    printf("Difference is %d", difference(53));
+    printf("\nDifference is %d", difference(-30));
 }
